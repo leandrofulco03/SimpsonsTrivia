@@ -13,9 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Ruta para el Home
 Route::get('/', function () {
-    return view('welcome');
+    return view('simpsonshome');
 });
+
+//Ruta para preguntas frecuentes
+Route::get('/preguntas', function(){
+  return view('preguntas');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
