@@ -23,13 +23,10 @@ Route::get('/preguntas', function(){
   return view('preguntas');
 });
 
-Auth::routes();
+//Registro
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
@@ -43,4 +40,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/play', 'playController@index')->name('play');
+//Preguntas y respuestas
+Route::get('/question', 'QuestionController@index');
