@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('Titulo', 'inicio de sesión')
+@section('Titulo', 'Inicio de sesión')
 @section('content')
 <div class="container" style="background-color: white; margin-top: -45px;">
     <div class="row justify-content-center">

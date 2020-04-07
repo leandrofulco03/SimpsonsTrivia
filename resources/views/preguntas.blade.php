@@ -3,7 +3,7 @@
 @section('content')
 
   <div class="container container1" style="margin-top: -45px; padding-bottom: 10px; padding-top: 70px;">
-    <h1 id="titulo1" align="center" style="font-family: 'Voltaire', sans-serif; padding-bottom: 50px;">PREGUNTAS FRECUENTES</h1>
+    <h1 id="titulo1" align="center" style="font-family: 'Voltaire', sans-serif; padding-bottom: 50px; color: yellow; background: #6c757d;"><u>PREGUNTAS FRECUENTES</u></h1>
   <div class="container" style="margin-bottom: 35px;">
     <div class="accordion" id="accordionExample">
   <div class="card" style="background: rgba(0,0,0,.5);">
@@ -27,6 +27,8 @@
         <button class="btn btn-link collapsed" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <h2 style="text-align: left; font-size: 22px;">¿En qué se basa el juego?</h2>
         </button>
+        <p> TE FALTO AQUI MALDITA CRIADA</p>
+        {{-- Falta la respuesta de esta pregunta --}}
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
