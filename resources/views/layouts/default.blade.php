@@ -47,7 +47,7 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
-                    @guest
+                {{--    @guest  --}}
                       <li class="navbar-item" style="text-align: center; font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;  margin-left: 0px; margin-right: auto;">
                         <a class="nav-link" href="{{ route('login') }}">INICIAR SESIÓN<span classs="sr-only"></span></a>
                       </li>
@@ -63,7 +63,7 @@
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif --}}
-                    @else
+              {{--      @else
                       <ul class="navbar-nav ml- mr-10">
                       <li class="navbar-item">
                       <p style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px; text-align: center;">Bienvenido {{ Auth::user()->name }}!</p>
@@ -71,7 +71,7 @@
                           <a class="dropdown-item" href="{{ route('logout') }}"
                              onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">
-                              SALIR{{-- {{ __('Logout') }} --}}
+                              SALIR{{-- {{ __('Logout') }}
                           </a>
 
                           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -84,8 +84,8 @@
                             </a>
 
 
-                        </li> --}}
-                    @endguest
+                        </li>
+                    @endguest  --}}
                 </ul>
             </div>
         </div>

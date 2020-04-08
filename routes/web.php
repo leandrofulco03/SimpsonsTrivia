@@ -32,13 +32,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 //Preguntas y respuestas
 Route::get('/question', 'QuestionController@index');
+
+//Perfil
+Route::get('/profile', 'UserController@profile');
+Route::post('/profile', 'UserController@update_avatar');
