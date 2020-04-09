@@ -316,7 +316,7 @@
   <h3 style="font-family: 'Voltaire', sans-serif; color: black; font-size: 70px; text-align: center; padding-top: 100px;">EMPIEZA AHORA!</h3>
 
     <div class="col-md-12">
-      <a href="{{ url('/play') }}" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-lg"><ion-icon name="play"></ion-icon>PLAY</button></a> <br>
+      <a href=" {{ url('/register') }}" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-lg" style="font-family: 'Voltaire', sans-serif;"><ion-icon name="play"></ion-icon>PLAY</button></a> <br>
 
       </div>
       </div>
