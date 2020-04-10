@@ -24,14 +24,12 @@
 <div class="card" style="background: rgba(0,0,0,.5);">
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-link" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <h2 style="text-align: left; font-size: 22px;">¿En qué se basa el juego?</h2>
         </button>
-        <p> TE FALTO AQUI MALDITA CRIADA</p>
-        {{-- Falta la respuesta de esta pregunta --}}
       </h2>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
           <p style="color: white;">El juego se basa en cuánto saben los jugadores sobre los simpson. </p>
           </div>
@@ -78,7 +76,7 @@
         </div>
             <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
          <div class="card-body">
-             <p style="color: white;">El usuario tendrá un cronometro y diferentes opciones para elegir la cual una podrá ser correcta y las demás incorrectas. </p>
+             <p style="color: white;">El usuario tendrá diferentes opciones para elegir la cual una podrá ser correcta y las demás incorrectas. </p>
          </div>
        </div>
       </div>
@@ -87,13 +85,13 @@
         <div class="card-header" id="headingSix">
           <h2 class="mb-0">
             <button class="btn btn-link" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-              <h2 style="text-align: left; font-size: 22px;">¿Puedo responder la pregunta luego que finalice el tiempo? </h2>
+              <h2 style="text-align: left; font-size: 22px;">¿Puedo elegir más de una opción? </h2>
             </button>
           </h2>
         </div>
             <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
          <div class="card-body">
-           <p style="color: white;">Las preguntas tienen un límite de tiempo, aún así al finalizar este tiempo se podrá elegir una opción pero no afectará positivamente al puntaje.</p>
+           <p style="color: white;">En las preguntas indicará si habrá mas de una opción para elegir.</p>
          </div>
          </div>
        </div>
@@ -112,21 +110,6 @@
           </div>
           </div>
         </div>
-
-        <div class="card" style="background: rgba(0,0,0,.5);">
-          <div class="card-header" id="headingEight">
-            <h2 class="mb-0">
-              <button class="btn btn-link" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-                <h2 style="text-align: left; font-size: 22px;">¿Se obtiene algún premio?</h2>
-              </button>
-            </h2>
-          </div>
-              <div id="collapseEight" class="collapse show" aria-labelledby="headingEight" data-parent="#accordionExample">
-           <div class="card-body">
-             <p style="color: white;">Se asignarán ápodos acordes al buen o mal resultado que obtengas.</p>
-           </div>
-           </div>
-         </div>
 
          <div class="card" style="background: rgba(0,0,0,.5);">
            <div class="card-header" id="headingNine">

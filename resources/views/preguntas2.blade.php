@@ -27,11 +27,9 @@
         <button class="btn btn-link collapsed" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <h2 style="text-align: left; font-size: 22px;">¿En qué se basa el juego?</h2>
         </button>
-        <p> TE FALTO AQUI MALDITA CRIADA</p>
-        {{-- Falta la respuesta de esta pregunta --}}
       </h2>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
           <p style="color: white;">El juego se basa en cuánto saben los jugadores sobre los simpson. </p>
           </div>

@@ -11,6 +11,6 @@ class SeederDeQuestions extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }
