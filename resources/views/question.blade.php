@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 
 @section('content')
     <div class="container" style="background-color: white; padding-bottom: 100px;padding-top: 70px;margin-top: -50px;">

@@ -22,6 +22,11 @@ Route::get('/', function () {
 Route::get('/preguntas', function(){
   return view('preguntas');
 });
+//Ruta para preguntas frecuentes con usuario logueado
+Route::get('/preguntas2', function(){
+  return view('preguntas2');
+});
+
 
 //Registro
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');

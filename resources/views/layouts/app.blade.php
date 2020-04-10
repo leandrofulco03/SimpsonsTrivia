@@ -23,10 +23,10 @@
   </head>
   <body>
     <header>
-      <div class="container container1">
+      {{-- <div class="container container1">
         <div class="imagenhomero">
         <img src="img/homero.png" alt="homero" width="400">
-      </div>
+      </div>--}}
       </div>
       <div class="container container2">
       <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #ffea00">
@@ -48,21 +48,7 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
                     @guest
-                      <li class="navbar-item" style="text-align: center; font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;  margin-left: 0px; margin-right: auto;">
-                        <a class="nav-link" href="{{ route('login') }}">INICIAR SESIÓN<span classs="sr-only"></span></a>
-                      </li>
-                      <li class="nav-item" style="text-align: center; font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px; margin-left: 10px; margin-right: -40px;">
-                        <a class="nav-link" href="{{ route('register') }}">REGISTRARSE<span class="sr-only">(current)</span></a>
-                      </li>
-                    {{-- </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @endif --}}
+
                     @else
                       <li class="nav-item dropdown">
                                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="position: relative; padding-left: 50px;">
@@ -91,7 +77,7 @@
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav ml-2 mr-auto">
            <li class="nav-item" style="text-align: center; font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px; margin-right: -20px;">
-             <a class="nav-link" href="/preguntas">PREGUNTAS FRECUENTES<span class="sr-only"></span></a>
+             <a class="nav-link" href="/preguntas2">PREGUNTAS FRECUENTES<span class="sr-only"></span></a>
            </li>
          </ul>
 
@@ -102,7 +88,7 @@
      <main class="py-4">
          @yield('content')
      </main>
-     <div class="container footer" style="margin-bottom: -50px; margin-top: -30px;">
+     <div class="container footer" style="margin-bottom: -50px; margin-top: 140px;">
      <section class="row" style="background-color:#2C3E50">
       <article class="col-12 text-center">
         <p style="color: white; padding-top: 15px; font-family: sans-serif;">Copyright&copy TheSimpsonsVideoTrivia 2020</p>

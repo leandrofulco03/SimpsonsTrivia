@@ -15,7 +15,7 @@
               @endif
 
             <p style="font-family: 'Voltaire', sans-serif; font-size: 22px; margin-left: 18px;">Ya estas registrado!</p> <br>
-            <p style="font-family: 'Voltaire', sans-serif; font-size: 22px; margin-left: 18px;">Para comenzar a jugar pulsa el boton <a href=" {{ url('/questions') }}" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-lg"><ion-icon name="play"></ion-icon>PLAY</button></a></p>
+            <p style="font-family: 'Voltaire', sans-serif; font-size: 22px; margin-left: 18px;">Para comenzar a jugar pulsa el boton <a href=" {{ url('/question') }}" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-lg"><ion-icon name="play"></ion-icon>PLAY</button></a></p>
           </div>
       </div>
   </div>
