@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container" style="background-color:; padding-bottom: 100px; padding-top: 70px;margin-top: -50px;">
+<div class="container" style="background-color: white; padding-bottom: 180px; padding-top: 70px;margin-top: -50px; margin-bottom: -170px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
           <img src="/uploads/avatars/{{ $user->avatar }}" style="width: 150px; height:150px; float: left; border-radius: 50%; margin-right: 25px;">

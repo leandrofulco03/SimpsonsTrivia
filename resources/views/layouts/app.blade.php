@@ -23,15 +23,15 @@
   </head>
   <body>
     <header>
-      {{-- <div class="container container1">
+       <div class="container container1">
         <div class="imagenhomero">
         <img src="img/homero.png" alt="homero" width="400">
-      </div>--}}
+      </div>
       </div>
       <div class="container container2">
       <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #ffea00">
         <div class="container">
-            <a class="navbar-brand" style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;" href="{{ url('/home') }}">
+            <a class="navbar-brand" style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;" href="{{ url('/question') }}">
                 {{ config('app.name', 'Simpsons Trivia') }}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
