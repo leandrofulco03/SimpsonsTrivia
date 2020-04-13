@@ -2,11 +2,11 @@
 @section('Titulo', 'Registro')
 @section('content')
 
-<div class="container" style=" background-color: white; margin-top: -45px; padding-bottom: 70px;">
+<div class="container" style=" background-color: white; margin-top: -45px; padding-bottom: 100px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="container" style="background: rgba(0,0,0,.5);  width: 100%; margin: auto; padding: 5px 35px; margin-top: 70px; padding-bottom: 70px; border-radius: 10px; height: 500px;">
-                <div class="card-header" style="color: yellow;">{{ __('Registro') }}</div>
+            <div class="container" style="background: rgba(0,0,0,.5);  width: 100%; margin: auto; padding: 5px 35px; margin-top: 70px; padding-bottom: 70px; border-radius: 10px; height: 400px;">
+                <div class="card-header" style="color: yellow; font-family: 'Voltaire', sans-serif; font-size: 20px;">{{ __('Registro') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

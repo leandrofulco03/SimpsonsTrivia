@@ -1,11 +1,11 @@
 @extends('layouts.default')
 @section('Titulo', 'Inicio de sesión')
 @section('content')
-<div class="container" style="background-color: white; margin-top: -45px;">
+<div class="container" style="background-color: white; margin-top: -45px; padding-bottom: 50px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class=""  style="background: rgba(0,0,0,.5);  width: 100%; margin: auto; padding: 5px 35px; margin-top: 70px; margin-bottom: 70px; padding-bottom:50px; border-radius: 10px; height: 280px;">
-                <div class="card-header" style="color: yellow;">{{ __('Iniciar Sesion') }}</div>
+                <div class="card-header" style="color: yellow; font-family: 'Voltaire', sans-serif; font-size:20px;">{{ __('Iniciar Sesion') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
