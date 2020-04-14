@@ -3,10 +3,11 @@
 @section('content')
 
   <div class="container container1" style="margin-top: -45px; padding-bottom: 10px; padding-top: 70px;">
-    <h1 id="titulo1" align="center" style="font-family: 'Voltaire', sans-serif; padding-bottom: 50px; color: yellow; background: #6c757d;"><u>PREGUNTAS FRECUENTES</u></h1>
+
   <div class="container" style="margin-bottom: 35px;">
     <div class="accordion" id="accordionExample">
   <div class="card" style="background: rgba(0,0,0,.5);">
+      <h1 id="titulo1" align="center" style="font-family: 'Voltaire', sans-serif; padding-bottom: 50px; color: yellow;"><u>PREGUNTAS FRECUENTES</u></h1>
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
         <button class="btn btn-link" style="color:  #ffea00;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

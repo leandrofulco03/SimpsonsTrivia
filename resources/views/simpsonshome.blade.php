@@ -288,6 +288,7 @@
   <!--Fin de Animaciones-->
 </div>
 </div>
+@guest
 <div class="container container3" style="padding-top: 80px;">
   <div class="container" style="background: rgba(0,0,0,.5);  width: 50%; margin: auto; padding: 5px 35px; margin-top: 50px; padding-bottom:30px; border-radius: 10px; height: 360px;">
 <div class="col-md-12">
@@ -301,6 +302,21 @@
       </div>
       </div>
       </div>
+@else
+  <div class="container container3" style="padding-top: 80px;">
+    <div class="container" style="background: rgba(0,0,0,.5);  width: 50%; margin: auto; padding: 5px 35px; margin-top: 50px; padding-bottom:30px; border-radius: 10px; height: 360px;">
+  <div class="col-md-12">
+
+    <h3 style="font-family: 'Voltaire', sans-serif; color: black; font-size: 70px; text-align: center; padding-top: 100px;">EMPIEZA AHORA!</h3>
+
+      <div class="col-md-12">
+        <a href=" {{ url('/question') }}" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-lg" style="font-family: 'Voltaire', sans-serif;"><ion-icon name="play"></ion-icon>PLAY</button></a> <br>
+
+        </div>
+        </div>
+        </div>
+        </div>
+@endguest
 
  <div class="container containeracercade" style="padding-bottom: 50px;">
     <h1 style="font-family: 'Voltaire', sans-serif; font-size: 45px; padding-bottom: 50px; padding-top: 60px; margin-left: 15px;">ACERCA DE</h1>

@@ -6,6 +6,7 @@
         <div class="col-md-8">
           <img src="/uploads/avatars/{{ $user->avatar }}" style="width: 150px; height:150px; float: left; border-radius: 50%; margin-right: 25px;">
           <h2>{{ $user->name }}</h2>
+          <h4>{{ $user->username }}</h4>
           <form enctype="multipart/form-data" action="/profile" method="post">
            <label>Cambiar Foto de Perfil</label>
            <input type="file" name="avatar" style="margin: 9px;">

@@ -31,7 +31,7 @@
       <div class="container container2">
       <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #ffea00">
         <div class="container">
-            <a class="navbar-brand" style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;" href="{{ url('/question') }}">
+            <a class="navbar-brand" style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;" href="{{ url('/') }}">
                 {{ config('app.name', 'Simpsons Trivia') }}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -53,7 +53,7 @@
                       <li class="nav-item dropdown">
                                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="position: relative; padding-left: 50px;">
                                       <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width: 32px; position: absolute; top: 10px; left: 10px; border-radius: 50%;">
-                                    <span style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;">  {{ Auth::user()->name }} </span> <span class="caret"></span>
+                                    <span style="font-weight: bold; font-family: 'Voltaire', sans-serif; font-size: 20px;">  {{ Auth::user()->username }} </span> <span class="caret"></span>
                                   </a>
 
                                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
