@@ -14,7 +14,6 @@ class Question extends Model
 protected $guarded = [];
 
  public function answer() {
-     return $this-
-     >hasMany(Answer::class, 'question_id');
+     return $this->hasMany(Answer::class, 'question_id');
  }
 }
