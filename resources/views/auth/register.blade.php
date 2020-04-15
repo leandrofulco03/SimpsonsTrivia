@@ -5,7 +5,7 @@
 <div class="container" style=" background-color: white; margin-top: -45px; padding-bottom: 100px;">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="container" style="background: rgba(0,0,0,.5);  width: 100%; margin: auto; padding: 5px 35px; margin-top: 70px; padding-bottom: 70px; border-radius: 10px; height: 450px;">
+            <div class="container" style="background: rgba(0,0,0,.5);  width: 100%; margin: auto; padding: 5px 35px; margin-top: 70px; padding-bottom: 70px; border-radius: 10px; height: 500px;">
                 <div class="card-header" style="color: yellow; font-family: 'Voltaire', sans-serif; font-size: 20px;">{{ __('Registro') }}</div>
 
                 <div class="card-body">
@@ -16,7 +16,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right" style="color: white;" >{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="nameForm" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" {{-- required autocomplete="name" autofocus --}}>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" {{-- required autocomplete="name" autofocus --}}>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -66,6 +66,18 @@
                                 @enderror
                             </div>
                         </div>
+
+                        <!--Seleccionar Pais -->
+
+                        <div class="form-group row">
+                            <label for="paises" class="col-md-4 col-form-label text-md-right" style="color: white;">{{ __('Selecciona tu país') }}</label>
+
+                          <div class="col-md-6">
+                            <select id="" class="" name="">
+
+                            </select>
+                        </div>
+                      </div>
 
 
 

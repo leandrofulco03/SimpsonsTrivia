@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/bart.css">
     <!--Links de animaciones-->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="/js/validarsesion.js"></script>
+    <script src="/js/validarSesion.js"></script>
   </head>
   <body>
     <header>

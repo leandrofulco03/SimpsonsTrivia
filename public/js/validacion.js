@@ -32,4 +32,44 @@ else if(password != passwordConfirm){
   alert("Las contraseñas no coinciden");
   return false;
 }
+
+//Primero traemos los paises
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var options = JSON.parse(xmlhttp.responseText);
+        var option = "";
+        for( var pais in options.contenido){
+                option += "<option value=" + options.contenido[pais] + ">" + pais + "</option>";
+        }
+        selectPaises.innerHTML = option;
+}
+};
+xmlhttp.open("GET", "http://pilote.techo.org/?do=api.getPaises", true);
+xmlhttp.send();
+//Cuando elijo otro pais, mostrarme las provincias si elegi argentina
+selectPaises.onchange = function(e){
+	var value = e.target.value;
+	if (value == 1){
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+    		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        	var options = JSON.parse(xmlhttp.responseText);
+        	var option = "";
+        	for( var provincia in options.contenido){
+                	option += "<option value=" + options.contenido[provincia] + ">" + provincia + "</option>";
+        	}
+        	selectProvincias.innerHTML = option;
+		}
+		};
+		xmlhttp.open("GET", "http://pilote.techo.org/?do=api.getRegiones?idPais=1", true);
+		xmlhttp.send();
+		} else {
+			selectProvincias.innerHTML = "";
+        }
+}
+
+
+
+
 }
