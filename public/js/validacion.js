@@ -5,6 +5,9 @@ var  email = document.getElementById('email').value;
 var  password = document.getElementById('password').value;
 
 name.onblur = function(){
-console.log("Algo");
+  if (name === "" ) {
+    alert("Este campo esta vacío");
+    return false;
+  }
  }
 }

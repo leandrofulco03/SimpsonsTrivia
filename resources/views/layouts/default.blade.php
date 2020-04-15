@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/bart.css">
     <!--Links de animaciones-->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="{{ asset('js/validacion.js') }}"></script>
+    <script src="/js/validacion.js"></script>
   </head>
   <body>
     <header>
