@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Question;
 
 class QuestionController extends Controller
 {
   public function index()
 {
-    return view('/question');
+$questions = Question::all();
+  return view('question', compact('questions'));
 }
+ public function resultados(Request $resultados){
+      var_dump($resultados);
+ }
 }

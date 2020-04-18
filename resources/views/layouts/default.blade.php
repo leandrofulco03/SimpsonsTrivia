@@ -99,7 +99,7 @@
      <div class="container footer" style="margin-bottom: -50px; margin-top: -30px;">
      <section class="row" style="background-color:#2C3E50">
       <article class="col-12 text-center">
-        <p style="color: white; padding-top: 15px; font-family: sans-serif;">Copyright&copy TheSimpsonsVideoTrivia 2020</p>
+        <p style="color: white; padding-top: 15px; font-family: sans-serif;">Copyright&copy TheSimpsonsTrivia 2020</p>
       </article>
      </section>
       </div>

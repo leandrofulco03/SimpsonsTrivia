@@ -74,7 +74,22 @@
 
                           <div class="col-md-6">
                             <select id="" class="" name="">
-
+                             <option value="">Argentina</option>
+                             <option value="">Bolivia</option>
+                             <option value="">Brasil</option>
+                             <option value="">Chile</option>
+                             <option value="">Colombia</option>
+                             <option value="">United States</option>
+                             <option value="">United Kingdom</option>
+                             <option value="">Peru</option>
+                             <option value="">Uruguay</option>
+                             <option value="">Mexico</option>
+                             <option value="">Ecuador</option>
+                             <option value="">Venezuela</option>
+                             <option value="">Paraguay</option>
+                             <option value="">Jamaica</option>
+                             <option value="">Canada</option>
+                             <option value="">España</option>
                             </select>
                         </div>
                       </div>
