@@ -48,10 +48,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Preguntas y respuestas
 Route::get('/question', 'QuestionController@index');
 Route::post('/resultados', 'QuestionController@resultados');
-<<<<<<< HEAD
-=======
 
->>>>>>> 50f56deed24c9fb098c33cdd5ecae1064f54667c
 
 //Perfil
 Route::get('/profile', 'UserController@profile');
