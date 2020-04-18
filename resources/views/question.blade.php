@@ -4,17 +4,19 @@
         <div class="row">
             <div class="col-md-12">
               <div align="center">
+                <h1>Elige la respuesta correcta</h1>
                 <form class="" action="/resultados" method="post">
                   @csrf
-                    @foreach (App\Question::all() as $question)
-                    <p style="font-family: 'Voltaire', sans-serif; font-size: 20px;">{{$question->body}}</p>
-                    @foreach ($question->answer as $answer)
-                      <p>
-                        <input type="radio" name="" value="">{{ $answer->answer }}
-                      </p>
-                      @endforeach
-                      @endforeach
-                      <input type="submit" name="" value="">Enviar
+                  @foreach ($questions as $question)
+                  <p style="font-family: 'Voltaire', sans-serif; font-size: 20px;">{{$question->body}}</p>
+                  @foreach ($question->answer as $answer)
+                    <div class="">
+                      <input type="radio" name="{{$answer->question_id}}" value="{{$answer->id}}">
+                      <span>{{$answer->answer}}</span>
+                     </div>
+                    @endforeach
+                  @endforeach
+                  <button type="submit" name="button">Enviar</button>
                     </form>
                 </div>
             </div>

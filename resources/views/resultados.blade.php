@@ -7,7 +7,9 @@
   <body>
     <h1>Resultados</h1>
     <ul>
-      <li>{{$resultados}}</li>
+      <li>
+        
+      </li>
     </ul>
   </body>
 </html>

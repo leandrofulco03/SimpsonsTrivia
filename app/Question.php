@@ -8,7 +8,7 @@ use App\Answer;
 
 class Question extends Model
 {
-  //protected $table = 'questions';
+  protected $table = 'questions';
 //protected $primaryKey = 'id';
 //protected $timestamps = false;
 protected $guarded = [];
