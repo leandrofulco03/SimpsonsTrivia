@@ -47,6 +47,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Preguntas y respuestas
 Route::get('/question', 'QuestionController@index');
+Route::post('/resultados', 'QuestionController@resultados');
+
 
 //Perfil
 Route::get('/profile', 'UserController@profile');

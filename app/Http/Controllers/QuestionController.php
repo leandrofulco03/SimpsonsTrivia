@@ -10,4 +10,8 @@ class QuestionController extends Controller
 {
     return view('/question');
 }
+ public function resultados(Request $resultados){
+    $resultados = compact('resultados');
+   return view('/resultados', $resultados);
+ }
 }
