@@ -30,7 +30,6 @@ $questions = Question::all();
         'score' => $valor
       ]);
 
-      $score = [];
       return view('/resultados',[
         'score' => $score->score
       ]);
