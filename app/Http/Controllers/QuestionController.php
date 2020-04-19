@@ -13,6 +13,6 @@ $questions = Question::all();
   return view('question', compact('questions'));
 }
  public function resultados(Request $resultados){
-      var_dump($resultados);
+        
  }
 }
