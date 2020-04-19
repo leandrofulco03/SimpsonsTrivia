@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Score;
 
 class User extends Authenticatable
 {
@@ -41,4 +42,8 @@ class User extends Authenticatable
     protected $primaryKey = 'id';
     //protected $timestamps = false;
     protected $guarded = [];
+
+    public function scores(){
+        return $this->hasMany(Score::class);
+    }
 }
