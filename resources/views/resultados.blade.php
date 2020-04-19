@@ -5,11 +5,7 @@
     <title></title>
   </head>
   <body>
-    <h1>Resultados</h1>
-    <ul>
-      <li>
-        
-      </li>
-    </ul>
+    <h1>Tu puntaje fue {{$score}}</h1>
+
   </body>
 </html>
