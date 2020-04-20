@@ -1,5 +1,5 @@
 @extends('layouts.validacion')
-@section('Titulo', 'Registro')
+@section('Titulo', 'Registro') {{--Para que se agregue el titulo en la pestaña --}}
 @section('content')
 
 <div class="container" style=" background-color: white; margin-top: -45px; padding-bottom: 100px;">
@@ -38,20 +38,6 @@
                               @enderror
                         </div>
                       </div>
-
-                <!--      <div class="form-group row">
-                          <label for="telefono" class="col-md-4 col-form-label text-md-right" style="color: white;">{ __('Telefono') }}</label>
-
-                          <div class="col-md-6">
-                              <input id="telefono" type="number" class="form-control error('telefono') is-invalid enderror" name="telefono" value="{ old('telefono') }}" required autocomplete="telefono">
-
-                              error('telefono')
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{ $message }}</strong>
-                                  </span>
-                              enderror
-                          </div>
-                      </div> -->
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right" style="color: white;">{{ __('E-Mail') }}</label>
@@ -93,26 +79,8 @@
                             </select>
                         </div>
                       </div>
-
-
-
-                    <!--    <div class="form-group row">
-                            <label for="avatar" class="col-md-4 col-form-label text-md-right" style="color: white;">{ __('Foto de Perfil') }}</label>
-
-                        <div class="col-md-6">
-                            <input id="avatar" type="file" class="form-control error('avatar') is-invalid enderror" name="avatar" value="{ old('avatar') }}" required autocomplete="avatar">
-
-                            error('avatar')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{ $message }}</strong>
-                                </span>
-                            enderror
-                        </div>
-                    </div> -->
-
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right" style="color: white;">{{ __('Contraseña') }}</label>
-
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" {{--required autocomplete="new-password"--}}>
 
@@ -123,7 +91,6 @@
                                 @enderror
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right" style="color: white;">{{ __('Repetir Contraseña') }}</label>
 
@@ -131,7 +98,6 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" {{--required autocomplete="new-password"--}}>
                             </div>
                         </div>
-
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

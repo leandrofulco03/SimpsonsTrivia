@@ -6,12 +6,14 @@
   password = document.getElementById('password').value;
   passwordConfirm = document.getElementById('password-confirm').value;
 
+  //Expresion regular para formato mail
   expresion = /\w+@\w+\.+[a-z]/;
 
  if(name === "" || username === "" || email === "" || password === ""){
    alert("Todos los campos son obligatorios");
    return false;
  }
+ //length te mide el largo del string
 else if(username.length < 6){
   alert("El Nombre de Usuario debe tener mas de 6 caracteres");
   return false;
