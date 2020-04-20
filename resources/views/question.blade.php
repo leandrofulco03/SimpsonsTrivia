@@ -8,9 +8,9 @@
                 <h1 style="color: black"><u>Elige la respuesta correcta</u></h1><br><br>
                 <form class="" action="/resultados" method="post">
                   @csrf
-                  @foreach ($questions as $question)
+                  @foreach ($questions->shuffle() as $question)
                   <label style="font-family: 'Voltaire', sans-serif; font-size: 20px; color: #ffea00; background-color: black">{{$question->body}}</label><br><br>
-                  @foreach ($question->answer as $answer)
+                  @foreach ($question->answer->shuffle() as $answer)
                     <div class="">
                       <input type="radio" name="{{$answer->question_id}}" value="{{$answer->id}}">
                       <span style="color: #667981;">{{$answer->answer}}</span>
